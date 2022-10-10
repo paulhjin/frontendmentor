@@ -108,6 +108,7 @@ main .add-button {
 main .add-button:hover {
     background-color: var(--clr-dark-blue);
     transition: 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 main .add-button img {
