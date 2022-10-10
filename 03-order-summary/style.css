@@ -20,7 +20,9 @@
     --ff-primary: 'Red Hat Display', sans-serif;
 
     --fs-400: 1rem;
-    
+    --fs-500: 1.2rem;
+    --fs-700: 1.7rem;
+
     --fw-bold: 900;
     --fw-regular: 700;
     --fw-light: 500;
@@ -110,10 +112,15 @@ main .buttons {
 }
 
 main h1 {
-    font-size: 1.7rem;
+    font-size: var(--fs-700);
     font-weight: var(--fw-bold);
     color: var(--clr-dark-blue);
     margin: 1.875rem 0;
+}
+
+main h2 {
+    font-size: var(--fs-400);
+    font-weight: var(--fw-bold);
 }
 
 main p.details {
