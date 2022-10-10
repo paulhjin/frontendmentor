@@ -12,8 +12,9 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - [Author](#author)
 
 ## Overview
-First Frontend Mentor Challenge 
-Feedback is always welcomed 😄
+First Frontend Mentor Challenge.
+
+Feedback is always welcomed 👉🏻 Frontend Mentor [@paulhjin](https://www.frontendmentor.io/profile/paulhjin)
 
 ### Screenshots
 
@@ -29,8 +30,7 @@ Feedback is always welcomed 😄
 - Live Site URL: [https://pjin-fem-qrcode-component.netlify.app](https://pjin-fem-qrcode-component.netlify.app)
 
 ## My process
-- Always 📱 first ➡️ then 🖥️
-
+- Always 📱 first 👉🏻 then 🖥️
 
 ### Built with
 - Semantic HTML5 markup
