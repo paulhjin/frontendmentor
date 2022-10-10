@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Colors */
+    --clr-soft-blue: hsl(215, 51%, 70%);
+    --clr-cyan: hsl(178, 100%, 50%);
+    --clr-blue-primary: hsl(217, 54%, 11%); /*bg*/
+    --clr-blue-secondary: hsl(216, 50%, 16%); /*card*/
+    --clr-blue-tertiary: hsl(215, 32%, 27%); /*line*/
+    --clr-white: hsl(0, 0%, 100%);
+
+    /* Font */
+    --ff-primary: 'Outfit', sans-serif;
+    --fs-primary: 18px;
+    --fs-secondary: 22px;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+body {
+    font-family: var(--ff-primary);
+    background-color: var(--clr-blue-primary);
+    color: var(--clr-soft-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: var(--fs-secondary);
+    color: var(--clr-white);
+    margin: 30px 0;
+}
+
+h1:hover {
+    color: var(--clr-cyan);
+    cursor: pointer;
+}
+
+p {
+    font-size: var(--fs-primary);
+    font-weight: var(--fw-light);
+    color: var(--clr-soft-blue);
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+}
+
+main {
+    padding: 25px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: var(--clr-blue-secondary);
+}
+
+main .nft {
+    position: relative;
+}
+
+main .nft img#equilibrium{
+    border-radius: 10px;
+    width: 100%;
+}
+
+main .nft .img-hover {
+    position: absolute;
+    top: 0;
+    background-color: hsl(178, 100%, 50%, 0.6);
+    border-radius: 10px;
+    width: 100%;
+    height: calc(100% - 4px);
+    z-index: 1;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+main .nft .img-hover:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+main .nft .img-hover img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main .equilibrium p {
+    margin-bottom: 30px;
+}
+
+main ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main ul li {
+    display: flex;
+    align-items: center;
+}
+
+main ul li:first-child {
+    color: var(--clr-cyan);
+    font-weight: var(--fw-bold);
+}
+
+main ul li img {
+    margin-right: 5px;
+}
+
+main .line {
+    border-top: 1px solid var(--clr-blue-tertiary);
+    margin: 20px 0;
+}
+
+main .profile {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+main .profile img {
+    width: 30px;
+    border: 1px solid var(--clr-white);
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+main .profile span {
+    color: var(--clr-white);
+}
+
+main .profile span:hover {
+    color: var(--clr-cyan);
+    cursor: pointer;
+}
