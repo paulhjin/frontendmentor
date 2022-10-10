@@ -37,6 +37,6 @@ Feedback is always welcomed 😄
 - Mobile-first workflow
 
 ## Author
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/paulhjin)
+- Frontend Mentor - [@paulhjin](https://www.frontendmentor.io/profile/paulhjin)
 - Github - [@paulhjin](https://github.com/paulhjin/)
 
