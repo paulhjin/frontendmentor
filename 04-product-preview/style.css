@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors */
+    --clr-dark-cyan: hsl(158, 36%, 37%);
+    --clr-cream: hsl(30, 38%, 92%);
+    --clr-dark-blue: hsl(212, 21%, 14%);
+    --clr-grayish-blue: hsl(228, 12%, 48%);
+    --clr-white: hsl(0, 0%, 100%);
+    
+    /* Font */
+    --ff-primary: 'Montserrat', sans-serif;
+    --ff-secondary: 'Fraunces', serif;
+
+    --fw-regular: 500;
+    --fw-bold: 700;
+
+    --fs-primary: 0.875rem;
+    --fs-secondary: 1.875rem;
+}
+
+body {
+    background-color: var(--clr-cream);
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+p {
+    color: var(--clr-grayish-blue);
+}
+
+main {
+    background-color: var(--clr-white);
+    width: 345px;
+    border-radius: 10px;
+}
+
+main img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+main .card-text {
+    padding: 25px;
+}
+
+main p.category{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+main h1.name {
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-secondary);
+    color: var(--clr-dark-blue);
+    margin-bottom: 20px;
+}
+
+main p.description {
+    line-height: 1.6;
+}
+
+main .pricing-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+main h2.price {
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-secondary);
+    color: var(--clr-dark-cyan);
+}
+
+main p.og-price {
+    text-decoration: line-through;
+    margin-left: 20px;
+}
+
+main .add-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    border: 0;
+    background-color: var(--clr-dark-cyan);
+    color: var(--clr-white);
+    font-weight: 700;
+}
+
+main .add-button:hover {
+    background-color: var(--clr-dark-blue);
+    transition: 0.3s ease-in-out;
+}
+
+main .add-button img {
+    width: 18px;
+    margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        width: 600px;
+        background-color: var(--clr-white);
+        border-radius: 10px;
+    }
+
+    main .img-container {
+        width: 100%;
+    }
+
+    main .img-container img {
+        content: url("./images/image-product-desktop.jpg");
+        width: 300px;
+        border-radius: 10px 0 0 10px;
+    }
+}
