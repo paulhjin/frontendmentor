@@ -12,20 +12,21 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - [Author](#author)
 
 ## Overview
-First Frontend Mentor Challenge
+First Frontend Mentor Challenge 
+Feedback is always welcomed 😄
 
 ### Screenshots
 
 *Mockup*
-![desktop and mobile mockup](./screenshots/mockup.png)
+![Desktop and mobile mockup](./screenshots/mockup.png)
 
 *Screenshot*
-![screenshot of page](./screentshots/screenshot.png)
+![Screenshot of page](./screenshots/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/paulhjin/frontendmentor/qr-code-component/)
-- Live Site URL: [Add live site URL here](https://pjin-fem-qrcode-component.netlify.app)
+- Solution URL: [https://github.com/paulhjin/frontendmentor/tree/master/01-qr-code](https://github.com/paulhjin/frontendmentor/tree/master/01-qr-code)
+- Live Site URL: [https://pjin-fem-qrcode-component.netlify.app](https://pjin-fem-qrcode-component.netlify.app)
 
 ## My process
 - Always 📱 first ➡️ then 🖥️
