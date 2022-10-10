@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* colors */
+    --clr-dark-blue: hsl(223, 47%, 23%);
+    --clr-bright-blue: hsl(245, 75%, 52%);
+    --clr-pale-blue: hsl(225, 100%, 94%);
+    --clr-very-pale-blue: hsl(225, 100%, 98%);
+    --clr-desaturated-blue: hsl(224, 23%, 55%);
+    --clr-white: hsl(0, 0%, 100%);
+    /* font */
+    --ff-primary: 'Red Hat Display', sans-serif;
+
+    --fs-400: 1rem;
+    
+    --fw-bold: 900;
+    --fw-regular: 700;
+    --fw-light: 500;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--clr-pale-blue);
+    background-image: url("images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-400);
+    text-align: center;
+}
+
+p {
+    color: var(--clr-desaturated-blue);
+    line-height: 1.6;
+}
+
+.btn {
+    font-family: inherit;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.6rem;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.change-btn {
+    background-color: transparent;
+    color: var(--clr-bright-blue);
+    text-decoration: underline;
+    font-weight: var(--fw-regular);
+}
+
+.change-btn:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.payment-btn {
+    background-color: var(--clr-bright-blue);
+    color: var(--clr-white);
+    margin-bottom: 1.3rem;
+    padding: 0.6rem;
+    width: 85%;
+    min-height: 3rem;
+    box-shadow: 0 0.6rem 2.5rem 0.3rem hsl(245, 75%, 52%, 0.3);
+}
+
+.payment-btn:hover {
+    opacity: 0.8;
+}
+
+.cancel-btn {
+    font-weight: var(--fw-regular);
+    background-color: transparent;
+    color: var(--clr-desaturated-blue);
+    margin-bottom: 0.3rem;
+}
+
+.cancel-btn:hover {
+    color: var(--clr-dark-blue);
+}
+
+main {
+    background-color: #fff;
+    margin: 1.3rem;
+    border-radius: 1.3rem;
+    width: 20.438rem;
+    padding-bottom: 1.3rem;
+    box-shadow: 0 0.6rem 2.5rem 0.3rem hsl(224, 23%, 55%, 0.4);
+}
+
+main .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1 {
+    font-size: 1.7rem;
+    font-weight: var(--fw-bold);
+    color: var(--clr-dark-blue);
+    margin: 1.875rem 0;
+}
+
+main p.details {
+    padding: 0 1.875rem;
+}
+
+main img.hero {
+    width: 100%;
+    border-radius: 1.3rem 1.3rem 0 0;
+    margin-bottom: 0.6rem;
+}
+
+main .pricing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem;
+    margin: 1.875rem auto 1.3rem;
+    background-color: var(--clr-very-pale-blue);
+    width: 85%;
+    border-radius: 0.9rem;
+}
+
+main .pricing article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .pricing article img {
+    margin-right: 1.3rem;
+}
+
+
+/* Media Queries */
+@media (min-width: 48rem) {
+    body {
+        background-image: url('./images/pattern-background-desktop.svg');
+    }
+
+    main {
+        width: 28.125rem;
+    }
+
+    main .pricing {
+        padding: 1.3rem;
+        width: 80%;
+    }
+
+    main p.details {
+        padding: 0 4rem;
+    }
+
+    .payment-btn {
+        width: 80%;
+    }
+
+    .cancel-btn {
+        margin-bottom: 1.6rem;
+    }
+}
