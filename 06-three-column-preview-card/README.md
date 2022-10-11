@@ -36,7 +36,7 @@ Mobile Screenshot
 ### Links
 
 - Solution URL: [Github](https://github.com/paulhjin/frontendmentor/tree/master/06-three-column-preview-card)
-- Live Site URL: [Netlify](https://pjin-fem-three-column-preview-card-component.netlify.app)
+- Live Site URL: [Netlify](https://pjin-fem-three-column-preview-card.netlify.app)
 
 ### Built with
 
