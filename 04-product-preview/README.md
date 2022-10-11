@@ -26,10 +26,10 @@ Users should be able to:
 ![Desktop and mobile mockup](./screenshots/mockup.png)
 
 Desktop Screenshot
-![Desktop screenshot](./screenshots/desktop.png)
+![Desktop screenshot](./screenshots/desktop_screenshot.png)
 
 Mobile Screenshot
-![Mobile screenshot](./screenshots/mobile.png)
+![Mobile screenshot](./screenshots/mobile_screenshot.png)
 
 ### Links
 
