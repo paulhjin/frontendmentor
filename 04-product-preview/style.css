@@ -44,30 +44,30 @@ p {
 
 main {
     background-color: var(--clr-white);
-    width: 345px;
-    border-radius: 10px;
+    width: 21.563rem;
+    border-radius: 0.625rem;
 }
 
 main img{
     width: 100%;
-    border-radius: 10px 10px 0 0;
+    border-radius: 0.625rem 0.625rem 0 0;
 }
 
 main .card-text {
-    padding: 25px;
+    padding: 1.563rem;
 }
 
 main p.category{
     text-transform: uppercase;
-    letter-spacing: 4px;
-    margin: 5px 0 10px 0;
+    letter-spacing: 0.25rem;
+    margin: 0.313rem 0 0.625rem 0;
 }
 
 main h1.name {
     font-family: var(--ff-secondary);
     font-size: var(--fs-secondary);
     color: var(--clr-dark-blue);
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 main p.description {
@@ -78,7 +78,7 @@ main .pricing-section {
     display: flex;
     align-items: center;
     width: 100%;
-    margin: 20px 0;
+    margin: 1.25rem 0;
 }
 
 main .pricing-section p.price {
@@ -89,16 +89,16 @@ main .pricing-section p.price {
 
 main p.og-price {
     text-decoration: line-through;
-    margin-left: 20px;
+    margin-left: 1.25rem;
 }
 
 main .add-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15px;
+    padding: 0.938rem;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     border: 0;
     background-color: var(--clr-dark-cyan);
     color: var(--clr-white);
@@ -112,25 +112,25 @@ main .add-button:hover {
 }
 
 main .add-button img {
-    width: 18px;
-    margin-right: 10px;
+    width: 1.125rem;
+    margin-right: 0.625rem;
 }
 
 @media (min-width: 768px) {
     main {
         display: flex;
-        width: 600px;
+        width: 37.5rem;
         background-color: var(--clr-white);
-        border-radius: 10px;
+        border-radius: 0.625rem;
     }
 
     main picture {
         width: 100%;
-        margin-bottom: -4px;
+        margin-bottom: -0.25rem;
     }
 
     main picture img {
-        width: 300px;
-        border-radius: 10px 0 0 10px;
+        width: 18.75rem;
+        border-radius: 0.625rem 0 0 0.625rem;
     }
 }
