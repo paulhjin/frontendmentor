@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Colors */
+    --clr-orange: hsl(31, 77%, 52%);
+    --clr-cyan: hsl(184, 100%, 22%);
+    --clr-dark-cyan: hsl(179, 100%, 13%);
+    --clr-white-75: hsla(0, 0%, 100%, 0.75);
+    --clr-light-gray: hsl(0, 0%, 95%);
+    
+    /* Font */
+    --ff-primary: 'Lexend Deca', sans-serif;
+    --ff-secondary: 'Big Shoulders Display', sans-serif;
+    --fs-400: 15px;
+    --fs-800: 40px;
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1.5rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 24rem;
+    border-radius: 0.625rem;
+    overflow: hidden;
+}
+
+.card {
+    padding: 3.125rem;
+}
+
+.orange {
+    background-color: var(--clr-orange);
+}
+
+.cyan {
+    background-color: var(--clr-cyan);
+}
+
+.dark-cyan {
+    background-color: var(--clr-dark-cyan);
+}
+
+.icon {
+    margin-bottom: 2rem;
+}
+
+.heading {
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-800);
+    text-transform: uppercase;
+    color: var(--clr-light-gray);
+    margin-bottom: 1.25rem;
+}
+
+.card-paragraph {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-400);
+    color: var(--clr-white-75);
+    margin-bottom: 3rem;
+    line-height: 1.5;
+}
+
+.btn {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-400);
+    padding: 0.8rem 1.8rem;
+    border-radius: 1.875rem;
+    border: 0.125rem solid var(--clr-light-gray);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--clr-light-gray);
+}
+
+.orange-text {
+    color: var(--clr-orange);
+}
+
+.cyan-text {
+    color: var(--clr-cyan);
+}
+
+.dark-cyan-text {
+    color: var(--clr-dark-cyan);
+}
+
+/* Media Query */
+@media (min-width: 48rem) {
+    main {
+        flex-direction: row;
+        max-width: 57.5rem;
+    }
+
+    .heading {
+        margin-bottom: 2.3rem;
+    }
+
+    .card-paragraph {
+        margin-bottom: 5rem;
+    }
+
+}
