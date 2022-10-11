@@ -60,7 +60,7 @@ main .card-text {
 main p.category{
     text-transform: uppercase;
     letter-spacing: 4px;
-    margin-bottom: 10px;
+    margin: 5px 0 10px 0;
 }
 
 main h1.name {
@@ -81,7 +81,7 @@ main .pricing-section {
     margin: 20px 0;
 }
 
-main h2.price {
+main .pricing-section p.price {
     font-family: var(--ff-secondary);
     font-size: var(--fs-secondary);
     color: var(--clr-dark-cyan);
@@ -124,12 +124,12 @@ main .add-button img {
         border-radius: 10px;
     }
 
-    main .img-container {
+    main picture {
         width: 100%;
+        margin-bottom: -4px;
     }
 
-    main .img-container img {
-        content: url("./images/image-product-desktop.jpg");
+    main picture img {
         width: 300px;
         border-radius: 10px 0 0 10px;
     }
