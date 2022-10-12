@@ -24,8 +24,6 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ![Desktop and mobile screenshot](./screenshots/screenshot.png)
 
-
-
 ### Links
 
 - Solution URL: [Github](https://github.com/paulhjin/frontendmentor/tree/master/07-profile-card)
