@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --clr-red: hsl(0, 78%, 62%);
+    --clr-cyan: hsl(180, 62%, 55%);
+    --clr-orange: hsl(34, 97%, 64%);
+    --clr-blue: hsl(212, 86%, 64%);
+    --clr-dark-blue: hsl(234, 12%, 34%);
+    --clr-grayish-blue: hsl(229, 6%, 66%);
+    --clr-light-gray: hsl(0, 0%, 98%);
+    --clr-white: hsl(0, 0%, 100%);
+
+    --ff-primary: 'Poppins', sans-serif;
+
+    --fs-800: 1.5rem;
+    --fs-400: 0.9375rem;
+    --fs-300: 0.8125rem; 
+
+    --fw-light: 200;
+    --fw-regular: 400;
+    --fw-semi-bold: 600;
+}
+
+body {
+    background-color: var(--clr-light-gray);
+    font-family: var(--ff-primary);
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin: 5rem 0 3rem 0;
+}
+
+header h1 {
+    font-size: var(--fs-800);
+    font-weight: var(--fw-light);
+    color: var(--clr-dark-blue);
+}
+
+header h1 span {
+    font-weight: var(--fw-semi-bold);
+    display: block;
+}
+
+header p {
+    font-size: var(--fs-400);
+    color: var(--clr-grayish-blue);
+    line-height: 1.8;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: var(--clr-white);
+    border-radius: 0.4rem;
+    padding: 2rem;
+    margin: 1.625rem 0;
+    box-shadow: 0 0.5rem 0.625rem hsl(229, 6%, 66%, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0.3125rem;
+    width: 100%;
+}
+
+.card h3 {
+    color: var(--clr-dark-blue);
+}
+
+.card p {
+    font-size: var(--fs-300);
+    font-weight: var(--fw-light);
+    color: var(--clr-grayish-blue);
+    margin: 0.6rem 0 1.6rem 0;
+}
+
+.card img {
+    display: block;
+    margin-left: auto;
+}
+
+.cyan::after {
+    background-color: var(--clr-cyan);
+}
+
+.red::after{
+    background-color: var(--clr-red);
+}
+
+.orange::after {
+    background-color: var(--clr-orange);
+}
+
+.blue::after {
+    background-color: var(--clr-blue);
+}
+
+/* Media Queries */
+@media (min-width: 53.125rem) {
+    header p {
+        max-width: 31.875rem;
+        margin: 2rem auto;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 75rem;
+        margin: 0 auto;
+    }
+
+    .card {
+        width: 21.875rem;
+        margin: 1.3rem;
+    }
+}
+
+@media (min-width: 77.5rem) {
+    .shift {
+        transform: translateY(50%);
+    }
+}
