@@ -13,6 +13,7 @@
     --clr-orange: hsl(31, 77%, 52%);
     --clr-cyan: hsl(184, 100%, 22%);
     --clr-dark-cyan: hsl(179, 100%, 13%);
+    --clr-white-100: hsl(0, 0%, 100%);
     --clr-white-75: hsla(0, 0%, 100%, 0.75);
     --clr-light-gray: hsl(0, 0%, 95%);
     
@@ -32,6 +33,11 @@ body {
     min-height: 100vh;
     padding: 1.5rem;
     background-color: var(--clr-light-gray);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 main {
@@ -86,14 +92,15 @@ main {
     font-size: var(--fs-400);
     padding: 0.8rem 1.8rem;
     border-radius: 1.875rem;
-    border: 0.125rem solid var(--clr-light-gray);
+    border: 0.125rem solid var(--clr-white-100);
+    background-color: var(--clr-white-100);
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
 
 .btn:hover {
     background-color: transparent;
-    color: var(--clr-light-gray);
+    color: var(--clr-white-100);
 }
 
 .orange-text {
