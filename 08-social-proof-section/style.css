@@ -19,7 +19,7 @@
     /* Font */
     --ff-primary: 'League Spartan', sans-serif;
 
-    --fs-heading: 3rem;
+    --fs-heading: 3.2rem;
     --fs-body: 0.9rem;
     --fs-paragraph: 1.1rem;
     
@@ -56,7 +56,7 @@ p {
     padding: 5rem 1.6rem;
 }
 
-main {
+.main-content {
     margin-bottom: 2rem;
 }
 
@@ -77,7 +77,7 @@ main {
     font-weight: var(--fw-bold);
 }
 
-.testimonials article {
+.testimonial {
     background-color: var(--clr-dark-magenta);
     margin: 1rem 0;
     border-radius: 0.6rem;
@@ -135,7 +135,7 @@ main {
         gap: 1.3rem;
     }
 
-    .testimonials {
+    .testimonials-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1.3rem;
@@ -160,7 +160,7 @@ main {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    main {
+    .main-content {
         max-width: 25.625rem;
     }
   
@@ -183,11 +183,11 @@ main {
         margin-left: 1.8rem;
     }
 
-    .testimonials > article:nth-child(2) {
+    .testimonials-container > .testimonial:nth-child(2) {
         transform: translateY(10%);
     }
   
-    .testimonials > article:nth-child(3) {
+    .testimonials-container > .testimonial:nth-child(3) {
         transform: translateY(20%);
     }
 }
