@@ -20,7 +20,7 @@
 
     --ff-primary: 'Poppins', sans-serif;
 
-    --fs-800: 1.5rem;
+    --fs-800: 2rem;
     --fs-400: 0.9375rem;
     --fs-300: 0.8125rem; 
 
@@ -30,6 +30,11 @@
 }
 
 body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: var(--clr-light-gray);
     font-family: var(--ff-primary);
     padding: 2rem;
@@ -37,7 +42,6 @@ body {
 
 header {
     text-align: center;
-    margin: 5rem 0 3rem 0;
 }
 
 header h1 {
