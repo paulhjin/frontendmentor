@@ -35,7 +35,7 @@ Mobile Screenshot
 
 ### Links
 
-- Solution URL: [Github](https://github.com/paulhjin/frontendmentor/tree/master/11-single-price-grid)
+- Solution URL: [Github](https://github.com/paulhjin/frontendmentor/tree/master/11-single-price-grid-component)
 - Live Site URL: [Netlify](https://pjin-fem-single-price-grid.netlify.app)
 
 ### Built with
