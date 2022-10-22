@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+</head>
+<body>
+  <header class="signup__header">
+    <img class="signup__header-logo" src="./images/logo.svg" alt="Base Apparel">
+  </header>
+  <div class="signup">
+    <main class="signup__main">
+      <img class="signup__image-mobile" src="./images/hero-mobile.jpg" alt="woman in orange shirt">
+      <img class="signup__logo-desktop" src="./images/logo.svg" alt="Base Apparel">
+      <section class="signup__content">
+        <h1 class="signup__heading">We're
+          <span class="signup__heading--bold">coming</span>
+          <span class="signup__heading--bold">soon</span>
+        </h1>
+        <p class="signup__body">
+          Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
+        <form class="signup__form" autocomplete="off">
+          <input type="email" id="signup__email" placeholder="Email Address">
+          <img class="signup__error-icon" src="./images/icon-error.svg" alt="" aria-hidden="true">
+          <button type="submit">
+            <img src="./images/icon-arrow.svg" alt="" aria-hidden="true">
+          </button>
+          <p class="signup__invalid">Please provide a valid email</p>
+        </form>
+      </section>
+    </main>
+    <div class="signup__desktop">
+      <img class="signup__desktop-image" src="./images/hero-desktop.jpg" alt="woman in orange shirt">
+    </div>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>
