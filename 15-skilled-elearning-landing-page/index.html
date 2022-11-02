@@ -14,34 +14,32 @@
     <a class="btn btn-solid-blue" href="#">Get Started</a>
   </header>
   <main class="container">
-    <article class="hero">
-      <section class="hero-text">
-        <p class="title">Maximize skill, minimize budget</p>
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Maximize skill, minimize budget</h1>
         <p>Our modern courses across a range of in-demand skills will give you the 
         knowledge you need to live the life you want.</p>
         <a class="btn btn-grad-pink" href="#">Get Started</a>
-      </section>
-      <section class="hero-image">
+      </div>
+      <div class="hero-image">
         <picture>
-          <source type="image/png" 
-                  media="(min-width: 1024px)"
-                  srcset="./images/image-hero-desktop.png 1046w,
-                          ./images/image-hero-desktop@2x.png 2092w">
+          <source media="(min-width: 1096px)"
+                  srcset="./images/image-hero-desktop.png,
+                          ./images/image-hero-desktop@2x.png">
 
-          <source type="image/png" 
-                  media="(min-width: 768px)"
-                  srcset="./images/image-hero-tablet.png 695w,
-                          ./images/image-hero-tablet@2x.png 1390w">   
+          <source media="(min-width: 768px)"
+                  srcset="./images/image-hero-tablet.png,
+                          ./images/image-hero-tablet@2x.png">   
 
-          <source type="image/png"
-                  srcset="./images/image-hero-mobile.png 435w,
-                          ./images/image-hero-mobile@2x.png 870w">
+          <source media="(max-width: 768px)"
+                  srcset="./images/image-hero-mobile.png,
+                          ./images/image-hero-mobile@2x.png">
 
           <img src="./images/image-hero-mobile.png" alt="">
         </picture>
-      </section>
-    </article>
-    <article class="cards">
+      </div>
+    </div>
+    <div class="cards">
       <section class="card card-highlight">
         <h2>Check out our most popular courses!</h2>
       </section>
@@ -92,7 +90,7 @@
         without outside investment.</p>
         <a class="card-link" href="#">Get Started</a>
       </section>
-    </article>
+    </div>
   </main>
   <footer class="footer-dark">
     <img class="footer-logo" src="./images/logo-light.svg" alt="Skilled">

@@ -105,7 +105,7 @@ img {
     margin: 3.3rem 0 4.6rem;
 }
 
-.hero-text > p.title {
+.hero-text > h1 {
     font: var(--heading-l);
     color: var(--clr-dark-blue);
     margin-bottom: 2rem;
@@ -115,6 +115,12 @@ img {
     font: var(--body-s);
     color: var(--clr-gray);
     margin-bottom: 3.4rem;
+}
+
+.hero-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Card Section */
@@ -199,7 +205,7 @@ img {
 
     .hero-image {
         position: absolute;
-        right: -40rem;
+        right: -25rem;
         top: -5rem;
     }
 
@@ -209,7 +215,6 @@ img {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         gap: 1rem;
-        margin-top: 17rem;
     }
 
     .card-highlight {
@@ -222,7 +227,9 @@ img {
 
 }
 
-@media screen and (min-width: 945px) {
+
+@media screen and (min-width: 1096px) {
+
     header {
         padding: 2.9rem 16.5rem;
     }
@@ -231,9 +238,13 @@ img {
         padding: 0 16.5rem 30rem;
     }
 
+    .hero-text {
+        width: 40%;
+    }
+
     .hero-image {
-        top: -15%;
-        right: -42%;
+        top: -15rem;
+        right: -35rem;
     }
 
     .cards {
@@ -247,22 +258,5 @@ img {
 
     .footer-dark {
         padding: 3.8rem 16.5rem;
-    }
-
-}
-
-@media screen and (min-width: 1096px) {
-    .hero-image {
-        top: -5%;
-        right: -25%;
-        max-width: 70%;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .hero-image {
-        top: -12%;
-        right: -18%;
-        width: 100rem;
     }
 }
