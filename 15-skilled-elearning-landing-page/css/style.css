@@ -231,14 +231,9 @@ img {
         padding: 0 16.5rem 30rem;
     }
 
-    .hero-text {
-        max-width: 46rem;
-    }
-
     .hero-image {
         top: -15%;
         right: -42%;
-
     }
 
     .cards {
@@ -266,8 +261,8 @@ img {
 
 @media screen and (min-width: 1440px) {
     .hero-image {
-        top: -10%;
-        right: -20%;
+        top: -12%;
+        right: -18%;
         width: 100rem;
     }
 }
