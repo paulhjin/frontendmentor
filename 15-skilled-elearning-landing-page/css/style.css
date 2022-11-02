@@ -105,7 +105,7 @@ img {
     margin: 3.3rem 0 4.6rem;
 }
 
-.hero-text > h1 {
+.hero-text > p.title {
     font: var(--heading-l);
     color: var(--clr-dark-blue);
     margin-bottom: 2rem;
