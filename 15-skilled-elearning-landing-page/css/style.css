@@ -121,6 +121,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 73rem;
 }
 
 /* Card Section */
@@ -195,7 +196,7 @@ img {
     }
 
     .hero {
-        padding: 0 3.9rem 18rem;
+        padding: 0 3.9rem 15rem;
     }
 
     .hero-text {
@@ -224,7 +225,6 @@ img {
     .footer-dark {
         padding: 3.6rem 3.9rem;
     }
-
 }
 
 
@@ -235,7 +235,7 @@ img {
     }
 
     .hero {
-        padding: 0 16.5rem 30rem;
+        padding: 0 16.5rem 20rem;
     }
 
     .hero-text {
@@ -243,8 +243,8 @@ img {
     }
 
     .hero-image {
-        top: -15rem;
-        right: -35rem;
+        top: -5rem;
+        right: -23rem;
     }
 
     .cards {
@@ -253,7 +253,6 @@ img {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 3rem;
-        margin-top: 3rem;
     }
 
     .footer-dark {
