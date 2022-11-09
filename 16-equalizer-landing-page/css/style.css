@@ -132,19 +132,10 @@ body {
     margin-top: 3.2rem;
 }
 
-.app-summary__apple img,
-.app-summary__android img {
-    margin-right: 0.5rem;
-}
-
 .app-summary__apple:hover {
     color: var(--clr-white);
     background-color: var(--clr-teal);
     transition: var(--transition-200);
-}
-
-.app-summary__container a img {
-    vertical-align: middle;
 }
 
 .app-summary__android {
@@ -156,6 +147,11 @@ body {
 .app-summary__android:hover {
     background-color: var(--clr-yellow);
     transition: var(--transition-200);
+}
+
+.app-summary__apple img,
+.app-summary__android img {
+    margin-right: 0.5rem;
 }
 
 /* Footer */
