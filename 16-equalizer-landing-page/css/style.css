@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+:root {
+    /* Colors */
+    --clr-teal: hsl(177, 68%, 64%);
+    --clr-orange: hsl(12, 94%, 65%);
+    --clr-yellow: hsl(33, 100%, 70%);
+    --clr-white: hsl(20, 33%, 98%);
+    --clr-blue: hsl(244, 23%, 12%);
+
+    /* Fonts */
+    --ff-primary: 'IBM Plex Sans', sans-serif;
+    --fw-bold: 700;
+    --fw-regular: 400;
+
+    --fs-heading-one: var(--fw-bold) 8.8rem var(--ff-primary);
+    --fs-heading-one-tablet: var(--fw-bold) 6.4rem var(--ff-primary);
+    --fs-heading-two: var(--fw-bold) 4rem/4.8rem var(--ff-primary);
+    --fs-heading-three: var(--fw-bold) 3.2rem/4rem var(--ff-primary);
+    --fs-body-one: var(--fw-regular) 2rem/3.4rem var(--ff-primary);
+    --fs-body-two: var(--fw-regular) 1.8rem/2.8rem var(--ff-primary);
+    --fs-body-three: var(--fw-regular) 1.6rem/2.6rem var(--ff-primary);
+    --fs-body-price: var(--fw-bold) 6.5rem var(--ff-primary);
+    --fs-button: var(--fw-bold) 1.8rem/3.2rem var(--ff-primary);
+
+    /* Transition */
+    --transition-200: 200ms ease;
+}
+
+body {
+    font-family: var(--ff-primary);
+    background: url('../assets/bg-main-mobile.png');
+    background-repeat: no-repeat;
+    background-position: right -25rem top -30rem;
+}
+
+.app-container {
+    margin-inline: auto;
+}
+
+/* Header */
+
+.app-header {
+    padding: 4rem 2.4rem 9rem;
+}
+
+.app-header__logo img {
+    width: 14.6rem;
+}
+
+.app-header__text {
+    margin-block: 6.4rem;
+}
+
+.app-header__text h1 {
+    font: var(--fs-heading-two);
+    letter-spacing: -0.1rem;
+}
+
+.app-header__text p {
+    font: var(--fs-body-three);
+    margin-top: 2rem;
+}
+
+/* Screenshot */
+
+.app-screenshot {
+    background-color: var(--clr-blue);
+    border-radius: 1rem;
+    position: relative;
+}
+
+.app-screenshot__bg {
+    background: url('../assets/bg-pattern-2.svg') no-repeat top center;
+    height: 60rem; 
+}
+
+.app-screenshot__phone {
+    width: 20.9rem;
+    position: absolute;
+    top: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.app-screenshot__phone img {
+    width: 100%;
+}
+
+/* Summary */
+
+.app-summary {
+    position: relative;
+}
+
+.app-summary__container {
+    background-color: var(--clr-orange);
+    border-radius: 1rem;
+    position: absolute;
+    left: 50%;
+    top: -18rem;
+    transform: translateX(-50%);
+    padding: 4.8rem 3.6rem;
+    width: 100%;
+}
+
+.app-summary__heading {
+    font: var(--fs-heading-three);
+    color: var(--clr-white);
+}
+
+.app-summary__text {
+    font: var(--fs-body-two);
+    color: var(--clr-white);
+    margin-block: 1.2rem;
+}
+
+.app-summary__price {
+    font: var(--fs-body-price);
+    color: var(--clr-white);
+}
+
+.app-summary__price span {
+    font: var(--fs-body-one);
+    vertical-align: middle;
+    margin-left: 1rem;
+}
+
+.app-summary__apple {
+    color: var(--clr-white);
+    background-color: var(--clr-blue);
+    margin-top: 3.2rem;
+}
+
+.app-summary__apple img,
+.app-summary__android img {
+    margin-right: 0.5rem;
+}
+
+.app-summary__apple:hover {
+    color: var(--clr-white);
+    background-color: var(--clr-teal);
+    transition: var(--transition-200);
+}
+
+.app-summary__container a img {
+    vertical-align: middle;
+}
+
+.app-summary__android {
+    color: var(--clr-blue);
+    background-color: var(--clr-white);
+    margin-top: 1.6rem;
+}
+
+.app-summary__android:hover {
+    background-color: var(--clr-yellow);
+    transition: var(--transition-200);
+}
+
+/* Footer */
+
+.app-footer {
+    margin-top: 44rem;
+    padding: 0 2.4rem 8rem;
+}
+
+.app-footer__logo {
+    margin-bottom: 3.2rem;
+}
+
+.app-footer__left {
+    font: var(--fs-body-three);
+    margin-bottom: 6.4rem;
+}
+
+.app-footer__left a {
+    font-weight: var(--fw-bold);
+}
+
+.app-footer__left a:hover, 
+.app-footer__socials a:hover {
+    color: var(--clr-orange);
+    transition: var(--transition-200);
+}
+
+/* Utility */
+
+.btn {
+    margin-inline: auto;
+    max-width: 29.6rem;
+    padding: 1.5rem 5rem;
+    font: var(--fs-button);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spacer-inline {
+    margin-inline: 2rem;
+}
+
+
+/* Media */
+@media screen and (min-width: 768px) {
+
+    body {
+        background: url('../assets/bg-main-tablet.png');
+        background-repeat: no-repeat;
+        background-position: right -10rem top -30rem;
+    }
+
+    .app-header {
+        background: url('../assets/bg-pattern-1.svg');
+        background-repeat: no-repeat;
+        background-position: right -3rem top -3rem;
+        padding: 4rem 3.3rem 17rem;
+    }
+
+    .app-header__text {
+        max-width: 60%;
+    }
+
+    .app-header__text h1 {
+        font: var(--fs-heading-one-tablet);
+        letter-spacing: -0.1rem;
+    }
+
+    .app-screenshot {
+        background-color: var(--clr-blue);
+        border-radius: 1rem;
+        position: relative;
+        margin-inline: 3.3rem;
+    }
+
+    .app-screenshot__phone {
+        width: 27rem;
+        position: absolute;
+        top: -21%;
+        left: 28%;
+    }
+    
+    .app-screenshot__phone img {
+        width: 100%;
+    }
+
+    .app-summary__container {
+        background-color: var(--clr-orange);
+        border-radius: 1rem;
+        position: absolute;
+        left: 61%;
+        top: -40rem;
+        transform: translateX(-50%);
+        padding: 4.8rem 3.6rem;
+        width: 40rem;
+    }
+
+    .app-footer {
+        margin-top: 24rem;
+        padding: 0 2.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .app-footer__left {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+
+    body {
+        background: url('../assets/bg-main-desktop.png'), url('../assets/bg-pattern-1.svg');
+        background-repeat: no-repeat;
+        background-position: right -10rem top -30rem, right top -4rem;
+    }
+
+    .app-container {
+        width: min(100% - 6.6rem, 1110px);
+    }
+
+    .app-header {
+        background: none;
+    }
+
+    .app-header__text {
+        max-width: 85%;
+    }
+
+    .app-header__text h1 {
+        font: var(--fs-heading-one);
+        letter-spacing: -0.1rem;
+    }
+
+    .app-header__text p {
+        font: var(--fs-body-one);
+    }
+
+    .app-summary__container {
+        left: 70%;
+        top: -45rem;
+    }
+
+    .app-footer {
+        padding: 0 3.3rem;
+    }
+
+    .app-footer__left {
+        display: flex;
+        gap: 10rem;
+        width: 60%;
+    }
+
+    .app-footer__socials {
+        padding-bottom: 6rem;
+    }
+
+}
