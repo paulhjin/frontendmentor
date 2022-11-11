@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap');
+
+:root {
+    /* Colors */
+    --clr-yankees-blue: hsl(240, 21%, 20%);
+    --clr-rackley: hsl(192, 37%, 48%);
+    --clr-aero: hsl(192, 54%, 64%);
+    --clr-pale-cyan: hsl(192, 90%, 77%);
+    --clr-royal-purple: hsl(268, 34%, 53%);
+    --clr-lenurple: hsl(267, 54%, 71%);
+    --clr-mauve: hsl(268, 100%, 86%);
+    --clr-roman-silver: hsl(240, 10%, 57%);
+    --clr-roman-silver-25: hsl(240, 10%, 57%, 0.25);
+    --clr-white: hsl(0, 0%, 98%);
+    --clr-pure-white: hsl(0, 0%, 100%);
+
+    /* Typography */
+    --ff-primary: 'Red Hat Display', sans-serif;
+    --fw-regular: 500;
+    --fw-bold: 900; 
+
+    --fs-heading-one-mobile: var(--fw-bold) 4rem/4.4rem var(--ff-primary);
+    --fs-heading-three-mobile: var(--fw-bold) 3.2rem/3.6rem var(--ff-primary);
+    --fs-body-mobile: var(--fw-regular) 1.6rem/2.6rem var(--ff-primary);
+    --fs-footer-mobile: var(--fw-regular) 1.8rem/2.6rem var(--ff-primary);
+
+    --fs-heading-one-tablet: var(--fw-bold) 4.8rem/4.8rem var(--ff-primary);
+    --fs-heading-three-tablet: var(--fw-bold) 4rem/4.8rem var(--ff-primary);
+    --fs-footer-tablet: var(--fw-bold) 4rem/4.4rem var(--ff-primary);
+
+    --fs-heading-one: var(--fw-bold) 6.4rem var(--ff-primary);
+    --fs-heading-three: var(--fw-bold) 4rem/4.4rem var(--ff-primary);
+    --fs-body: var(--fw-regular) 1.8rem/2.6rem var(--ff-primary);
+    --fs-overline: var(--fw-bold) 1.6rem/2.6rem var(--ff-primary);
+}
+
+body {
+    font-family: var(--ff-primary);
+    text-align: center;
+}
+
+.meet-container {
+    margin-inline: auto;
+}
+
+.meet-header__logo {
+    margin-block: 4.8rem;
+}
+
+.meet-header__hero {
+    background: url('../assets/tablet/image-hero.png') no-repeat center/cover;
+    height: clamp(14rem, -1.0231rem + 40.0616vw, 40rem);
+}
+
+.meet-download {
+    padding-inline: 2rem;
+}
+
+.meet-download__text {
+    max-width: 50rem;
+    margin-inline: auto;
+}
+
+.meet-download__text h1 {
+    font: var(--fs-heading-one-mobile);
+    margin-block: 4.5rem;
+    padding-inline: 3rem;
+    color: var(--clr-yankees-blue);
+}
+
+.meet-download__text p {
+    font: var(--fs-body-mobile);
+    color: var(--clr-roman-silver);
+    margin-bottom: 3.2rem;
+}
+
+.meet-main {
+    position: relative;
+    padding-inline: 2.4rem;
+}
+
+.meet-main__banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2.5rem;
+    margin-block: 6.4rem;
+}
+
+.meet-main__banner img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.meet-main__text h2 {
+    font: var(--fs-overline);
+    color: var(--clr-rackley);
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    margin-block: 2.4rem;
+}
+
+.meet-main__text h3 {
+    font: var(--fs-heading-three-mobile);
+    color: var(--clr-yankees-blue);
+}
+
+.meet-main__text p {
+    font: var(--fs-body-mobile);
+    color: var(--clr-roman-silver);
+    margin-block: 3.2rem;
+}
+
+.meet-footer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--clr-rackley);
+}
+
+.meet-footer::before {
+    content: "";
+    background: url('../assets/mobile/image-footer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.1;
+}
+
+.meet-footer__text {
+    position: relative;
+    padding: 7.2rem 2.4rem;
+    width: max(35rem, 50%);
+}
+
+.meet-footer__text h3 {
+    font: var(--fs-heading-three-mobile);
+    color: var(--clr-white);
+}
+
+.meet-footer__text p {
+    font: var(--fs-footer-mobile);
+    color: var(--clr-white);
+    margin-block: 3.2rem;
+}
+
+/* Buttons */
+.teal-btn {
+    background-color: var(--clr-rackley);
+    color: var(--clr-white);
+}
+
+.teal-btn:hover {
+    background-color: var(--clr-aero);
+    color: var(--clr-white);
+}
+
+.teal-btn span {
+    color: var(--clr-pale-cyan);
+}
+
+.purple-btn {
+    background-color: var(--clr-royal-purple);
+    color: var(--clr-white);
+}
+
+.purple-btn:hover {
+    background-color: var(--clr-lenurple);
+    color: var(--clr-white);
+}
+
+.purple-btn span {
+    color: var(--clr-mauve);
+}
+
+.btn {
+    display: block;
+    width: 19.3rem;
+    padding: 1.6rem 4rem;
+    border-radius: 3rem;
+    font: var(--fs-overline);
+    margin-block: 1.6rem;
+    margin-inline: auto;
+    transition: 300ms ease;
+}
+
+.btn-small {
+    display: block;
+    width: 13.9rem;
+    padding: 1.6rem 2.9rem;
+    border-radius: 3rem;
+    font: var(--fs-overline);
+    margin-block: 1.6rem;
+    margin-inline: auto;
+    transition: 300ms ease;
+}
+
+/* Design Elements */
+
+.line {
+    border-left: 0.1rem solid var(--clr-roman-silver-25);
+    height: 8.4rem;
+    position: absolute;
+    left: 50%;
+}
+
+.circle {
+    background: var(--clr-pure-white);
+    width: 5.6rem;
+    height: 5.6rem;
+    border-radius: 50%;
+    border: 0.1rem solid var(--clr-roman-silver-25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: var(--fs-overline);
+    color: var(--clr-roman-silver);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.number1 {
+    position: relative;
+    height: 22rem;
+}
+
+.line1 {
+    top: 6.4rem;
+}
+
+.circle1 {
+    top: 14.8rem;
+}
+
+.number2 {
+    position: relative;
+    height: 15rem;
+}
+
+.line2 {
+    top: 4.1rem;
+}
+
+.circle2 {
+    top: 12.5rem;
+}
+
+/* Media Query */
+
+@media screen and (min-width: 768px) {
+    .meet-download {
+        margin-inline: auto;
+        max-width: 45rem;
+    }
+
+    .meet-download__text h1 {
+        font: var(--fs-heading-one-tablet);
+    }
+
+    .meet-download__buttons {
+        display: flex;
+        flex-direction: row;
+        width: 35rem;
+        margin-inline: auto;
+    }
+
+    .meet-main__text {
+        max-width: 57.3rem;
+        margin-inline: auto;
+    }
+
+    .meet-main__text h3 {
+        font: var(--fs-heading-three-tablet);
+        padding-inline: 5rem;
+    }
+
+    .meet-main__banner {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+    
+    .meet-footer::before {
+        background: url('../assets/tablet/image-footer.jpg');
+    }
+
+    .meet-footer__text {
+        max-width: 57.3rem;
+    }
+
+    .meet-footer__text h3 {
+        font: var(--fs-footer-tablet);
+        margin-inline: auto;
+    }
+
+}
+
+@media screen and (min-width: 1080px) {
+
+    .meet-container {
+        background: url('../assets/desktop/image-hero-left.png'), url('../assets/desktop/image-hero-right.png');
+        background-repeat: no-repeat;
+        background-position: left -3.2rem top 10rem, right -3.2rem top 10rem;
+    }
+
+    .meet-header__hero {
+        background: none;
+        height: 0;
+    }
+
+    .meet-download {
+        height: 35.8rem;
+        width: clamp(40rem, -20.0000rem + 55.5556vw, 60rem);
+        margin-inline: auto;
+        max-width: none;
+    }
+
+    .meet-download__text h1 {
+        font: var(--fs-heading-one);
+    }
+
+    .meet-main__banner {
+        max-width: 111rem;
+        margin-inline: auto;
+    }
+
+    .meet-main__text p {
+        font: var(--fs-body);
+    }
+
+    .meet-footer::before {
+        background: url('../assets/desktop/image-footer.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .meet-footer__text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 111rem;
+        padding: 7.2rem 0;
+    }
+
+    .meet-footer__text h3 {
+        font: var(--fs-heading-three);
+        width: 35rem;
+        text-align: left;
+    }
+
+    .meet-footer__text p {
+        width: 35rem;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+
+    .meet-container {
+        background: url('../assets/desktop/image-hero-left.png'),url('../assets/desktop/image-hero-right.png');
+        background-repeat: no-repeat;
+        background-position: left 10% top 10rem, right 10% top 10rem;
+    }
+}
