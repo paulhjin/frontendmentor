@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700&display=swap');
+
+:root {
+    /* Colors */
+    --clr-medium-aquamarine: hsl(157, 74%, 62%);
+    --clr-pale-blue: hsl(157, 100%, 85%);
+    --clr-japanese-indigo: hsl(225, 26%, 23%);
+    --clr-ucla-blue: hsl(225, 21%, 45%);
+    --clr-periwinkle: hsl(225, 40%, 83%);
+    --clr-coral-red: hsl(0, 96%, 61%);
+    --clr-eerie-black: hsl(224, 35%, 11%);
+    --clr-manatee: hsl(225, 7%, 64%);
+    --clr-white: hsl(0, 0%, 100%);
+
+    /* Typography */
+    --ff-primary: 'Chivo', sans-serif;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    /* Mobile */
+    --fs-mobile-heading: var(--fw-light) 2.6rem/3.8rem var(--ff-primary);
+    --fs-mobile-body: var(--fw-light) 1.5rem/2.5rem var(--ff-primary);
+
+    /* Tablet */
+    --fs-tablet-heading: var(--fw-light) 4.8rem/5.6rem var(--ff-primary);
+    --fs-tablet-body: var(--fw-light) 1.8rem/2.8rem var(--ff-primary);
+
+    /* Desktop */
+    --fs-desktop-heading: var(--fw-light) 5.2rem/6.2rem var(--ff-primary);
+
+    /* Global */
+    --fs-form: var(--fw-bold) 1.4rem/2.8rem var(--ff-primary);
+    --fs-button: var(--fw-regular) 1.4rem/2.8rem var(--ff-primary);
+    --fs-error: var(--fw-bold) 1.2rem/1.4rem var(--ff-primary);
+}
+
+body {
+    font-family: var(--ff-primary);
+    background: var(--clr-eerie-black);
+}
+
+body::before {
+    content: "";
+    background: url('../assets/mobile/image-host.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.pod-main {
+    text-align: center;
+    padding: 2.4rem;
+    position: relative;
+    max-width: 50rem;
+    margin-inline: auto;
+}
+
+
+.pod-logo {
+    position: relative;
+    margin-block: 7.2rem;
+    width: 13.5rem;
+    margin-inline: auto;
+}
+
+.pod-main__heading {
+    font: var(--fs-mobile-heading);
+    text-transform: uppercase;
+    color: var(--clr-medium-aquamarine);
+}
+
+.pod-main__heading span {
+    color: var(--clr-white);
+    display: block;
+}
+
+.pod-main__body {
+    font: var(--fs-mobile-body);
+    color: var(--clr-periwinkle);
+    margin-block: 1.6rem;
+}
+
+.pod-main__platforms {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 3.3rem 0 4.8rem 0;
+}
+
+.pod-main__platforms img {
+    height: 1.7rem;
+}
+
+.pod-main__form {
+    margin-top: 4.8rem;
+}
+
+.pod-main__form.error > .pod-main__error {
+    display: block;
+}
+
+.pod-main__input {
+    background-color: var(--clr-japanese-indigo);
+    border-radius: 3rem;
+    border: 0;
+    display: block;
+    width: 100%;
+    padding: 0.9rem 3.2rem;
+    font: var(--fs-form);
+    color: var(--clr-manatee);
+}
+
+.pod-main__input::placeholder {
+    color: var(--clr-manatee);
+}
+
+.pod-main__input:focus {
+    outline: 0;
+}
+
+.pod-main__input:focus::placeholder {
+    color: transparent;
+}
+
+.pod-main__error {
+    font: var(--fs-error);
+    color: var(--clr-coral-red);
+    margin: 0.8rem 0 0 3.2rem;
+    text-align: left;
+    display: none;
+}
+
+.pod-main__btn {
+    background-color: var(--clr-medium-aquamarine);
+    color: var(--clr-eerie-black);
+    border-radius: 3rem;
+    display: block;
+    width: 100%;
+    padding: 0.9rem 3.2rem;
+    font: var(--fs-button);
+    margin-block: 1.6rem;
+    transition: 300ms ease;
+}
+
+.pod-main__btn:hover {
+    background-color: var(--clr-pale-blue);
+}
+
+.pod-main__icon {
+    filter: brightness(0) saturate(100%) invert(38%) sepia(19%) saturate(730%) hue-rotate(187deg) brightness(98%) contrast(90%);
+}
+
+/* Media Query */
+@media screen and (min-width: 768px) {
+
+    body::before {
+        content: "";
+        background: url('../assets/tablet/image-host.jpg'), url('../assets/desktop/bg-pattern-dots.svg');
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: top right, bottom left 3rem;
+        opacity: 1;
+        position: absolute;
+    }
+    
+    .pod-logo {
+        margin-inline: 0;
+        margin: 5rem 0 15.2rem 3.9rem;
+    }
+
+    .pod-main {
+        margin-inline: 0;
+        text-align: left;
+        background-color: var(--clr-eerie-black);
+        margin-left: 3.9rem;
+        padding-top: 9.3rem;
+        max-width: 65rem;
+    }
+
+    .pod-main__heading {
+        font: var(--fs-tablet-heading);
+    }
+
+    .pod-main__body {
+        max-width: 44.5rem;
+        font: var(--fs-tablet-body);
+    }
+
+    .pod-main__platforms {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        width: 54rem;
+        margin: 3.3rem 0 4.8rem 0;
+        position: relative;
+    }
+    
+    .pod-main__platforms img {
+        height: 2.9rem;
+    }
+    
+    .pod-main__form {
+        margin-top: 4rem;
+        position: relative;
+    }
+    
+    .pod-main__input {
+        width: 42.7rem;
+        padding: 1.4rem 3.2rem;
+    }
+
+    .pod-main__btn {
+        position: absolute;
+        width: 16.2rem;
+        padding: 0.9rem 1rem;
+        top: -1.1rem;
+        left: 26rem;
+    }
+
+    .flex-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body::before {
+        content: "";
+        background: url('../assets/desktop/bg-pattern-dots.svg'), url('../assets/desktop/image-host.jpg');
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: right bottom 7.8rem, right;
+    }
+
+    .pod-logo {
+        margin: 10.2rem 0 10.3rem 16.5rem;
+    }
+    
+    .pod-main {
+        max-width: 72.3rem;
+        margin-left: 16.5rem;
+    }
+
+    .pod-main__heading {
+        font: var(--fs-desktop-heading);
+    }
+
+    .pod-main__body {
+        margin-block: 0;
+    }
+
+    .pod-main__platforms {
+        margin: 6.4rem 0 4.8rem 0;
+    }
+
+}
