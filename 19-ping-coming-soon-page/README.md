@@ -34,7 +34,7 @@ Desktop Screenshot
 
 ![Desktop screenshot](./screenshots/desktop.png)
 
-Mobile and Tablet Screenshot
+Mobile Screenshot
 
 ![Mobile screenshot](./screenshots/mobile.png)
 
