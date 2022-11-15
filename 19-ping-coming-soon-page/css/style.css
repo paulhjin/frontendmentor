@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,600;0,700;1,400&display=swap');
+
+:root {
+    /* Color */
+    --clr-dark-blue: hsl(209, 33%, 12%);
+    --clr-blue: hsl(223, 87%, 63%);
+    --clr-cornflower-blue: hsl(224, 87%, 70%);
+    --clr-pale-blue: hsl(223, 100%, 88%);
+    --clr-light-blue: hsl(223, 59%, 83%);
+    --clr-light-red: hsl(354, 100%, 66%);
+    --clr-gray: hsl(0, 0%, 59%);
+    --clr-white: hsl(0, 0%, 100%);
+    --box-shadow: hsl(223, 87%, 63%, 0.23);
+    --circle-border: hsl(223, 87%, 63%, 0.15);
+
+    /* Typography */
+    --ff-primary: 'Libre Franklin', sans-serif;
+    --fw-bold: 700;
+    --fw-semi-bold: 600;
+    --fw-regular: 400;
+    --fw-light: 300;
+
+    --fs-heading: clamp(2.2rem, 1.2845rem + 2.4413vw, 4.8rem);
+    --fs-body: clamp(1.2rem, 0.9183rem + 0.7512vw, 2rem);
+    --fs-small: clamp(1rem, 0.9296rem + 0.1878vw, 1.2rem);
+    --fs-input: clamp(1.2rem, 1.0592rem + 0.3756vw, 1.6rem);
+}
+
+body {
+    font-family: var(--ff-primary);
+}
+
+.ping-container {
+    margin-inline: auto;
+    padding-inline: 2.8rem;
+    text-align: center;
+    max-width: 45rem;
+}
+
+.ping-logo {
+    margin: 8.1rem 0 3.2rem 0;
+}
+
+.ping-logo__image {
+    width: clamp(5.6rem, 4.4028rem + 3.1925vw, 9rem);
+}
+
+.ping-main__heading {
+    font-size: var(--fs-heading);
+    font-weight: var(--fw-light);
+    color: var(--clr-gray);
+}
+
+.ping-main__heading--bold {
+    font-weight: var(--fw-bold);
+    color: var(--clr-dark-blue);
+}
+
+.ping-main__body {
+    font-size: var(--fs-body);
+    color: var(--clr-dark-blue);
+    margin-top: 1.5rem;
+}
+
+.ping-main__form {
+    padding-inline: 2rem;
+}
+
+.ping-main__form.empty > .ping-main__input {
+    border: 0.1rem solid var(--clr-light-red);
+}
+
+.ping-main__form.error > .ping-main__input {
+    border: 0.1rem solid var(--clr-light-red);
+}
+
+.ping-main__form.error > .ping-main__error {
+    display: block;
+}
+
+.ping-main__form.empty > .ping-main__empty {
+    display: block;
+}
+
+.ping-main__error {
+    margin-top: 0.8rem;
+    display: none;
+}
+
+.ping-main__empty {
+    margin-top: 0.8rem;
+    display: none;
+}
+
+.ping-main__error--red {
+    color: var(--clr-light-red);
+    font-size: var(--fs-small);
+    font-style: italic;
+}
+
+.ping-main__input {
+    margin-top: 3.2rem;
+    border-radius: 3rem;
+    border: 0.1rem solid var(--clr-pale-blue);
+    padding: 1.1rem 3.2rem;
+    width: 100%;
+    outline: 0;
+    color: var(--clr-dark-blue);
+    font-size: var(--fs-input);
+}
+
+.ping-main__input::placeholder {
+    color: var(--clr-light-blue);
+}
+
+.ping-main__btn {
+    background-color: var(--clr-blue);
+    color: var(--clr-white);
+    padding-block: 1.2rem;
+    width: 100%;
+    border-radius: 3rem;
+    margin-top: 1rem;
+    box-shadow: 0 0.5rem 1rem 0.2rem var(--box-shadow);
+    transition: 300ms ease;
+    font-size: var(--fs-input);
+    font-weight: var(--fw-semi-bold);
+}
+
+.ping-main__btn:hover {
+    background-color: var(--clr-cornflower-blue);
+}
+
+.ping-main__dashboard {
+    margin: 7.2rem 0 12rem 0;
+}
+
+.ping-main__image {
+    width: 100%;
+}
+
+.ping-footer {
+    margin-bottom: 5rem;
+}
+
+.ping-footer__socials {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.ping-footer__icon {
+    font-size: 1.6rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    padding: 0.7rem;
+    border-radius: 50%;
+    color: var(--clr-blue);
+    border: 0.1rem solid var(--circle-border);
+    text-align: center;
+    transition: 300ms ease;
+}
+
+.ping-footer__icon:hover {
+    color: var(--clr-white);
+    background-color: var(--clr-blue);
+}
+
+.ping-footer__text {
+    font-size: var(--fs-small);
+    color: var(--clr-gray);
+    margin-top: 2.7rem;
+}
+
+@media screen and (min-width: 960px) {
+    .ping-container {
+        padding-inline: 2.8rem;
+        max-width: 64rem;
+    }
+
+    .ping-logo {
+        margin: 8rem 0 4rem 0;
+    }
+
+    .ping-main__body {
+        margin-top: 1.8rem;
+    }
+
+    .ping-main__form {
+        padding-inline: 0;
+        text-align: left;
+        position: relative;
+    }
+
+    .ping-main__input {
+        margin-top: 4rem;
+        padding: 1.9rem 3rem;
+        width: 42.1rem;
+    }
+
+    .ping-main__btn {
+        width: 20rem;
+        padding: 2rem 6rem;
+        position: absolute;
+        top: 3rem;
+        right: -5rem;
+    }
+
+    .ping-main__error--red {
+        text-align: left;
+        margin-left: 3.1rem;
+    }
+    
+    .ping-main__dashboard {
+        margin: 6rem 0 7.2rem 0;
+    }
+
+    .ping-footer__text {
+        margin-top: 2.5rem;
+    }
+}

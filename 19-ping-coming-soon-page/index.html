@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Frontend Mentor | Ping coming soon page</title>
+</head>
+<body>
+  <div class="ping-container">
+    <header class="ping-logo">
+      <img class="ping-logo__image" src="./images/logo.svg" alt="Ping.">
+    </header>
+    <main class="ping-main">
+      <h1 class="ping-main__heading">We are launching <span class="ping-main__heading--bold">soon!</span></h1>
+      <p class="ping-main__body">Subscribe and get notified</p>
+      <form class="ping-main__form">
+        <input class="ping-main__input" type="text" placeholder="Your email address...">
+        <div class="ping-main__error">
+          <p class="ping-main__error--red">Please provide a valid email address</p>
+        </div>
+        <div class="ping-main__empty">
+          <p class="ping-main__error--red">Whoops! It looks like you forgot to add your email</p>
+        </div>
+        <button class="ping-main__btn" type="submit">Notify Me</button>
+      </form>
+      <div class="ping-main__dashboard">
+        <img class="ping-main__image" src="./images/illustration-dashboard.png" alt="" aria-hidden="true">
+      </div>
+    </main>
+    <footer class="ping-footer">
+      <div class="ping-footer__socials">
+        <a href="#" class="ping-footer__icon"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="ping-footer__icon"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="ping-footer__icon"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <p class="ping-footer__text">&copy; Copyright Ping. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>
