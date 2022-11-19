@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+  <div class="signup-container">
+    <header class="signup-header">
+      <h1 class="signup-header__heading">
+        Learn to code by watching others
+      </h1>
+      <p class="signup-header__body">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable. 
+      </p>
+    </header>
+    <main class="signup-section">
+      <article class="signup-section__price">
+        <p class="signup-section__price-text"><span class="signup-section__price-text--semibold">Try it free 7 days</span> then $20/mo. thereafter</p>
+      </article>
+      <section class="signup-section__container">
+        <form class="signup-section__form">
+          <div class="signup-section__formfield">
+            <input type="text" placeholder="First Name" class="signup-section__input" id="firstname" autocomplete="off">
+            <div class="signup-section__error-icon">
+              <img src="./images/icon-error.svg" alt="" aria-hidden="true">
+            </div>
+            <div class="signup-section__error-container">
+              <small class="signup-section--error"></small>
+            </div>
+          </div>
+          <div class="signup-section__formfield">
+            <input type="text" placeholder="Last Name" class="signup-section__input margin-top-16" id="lastname" autocomplete="off">
+            <div class="signup-section__error-icon">
+              <img src="./images/icon-error.svg" alt="" aria-hidden="true">
+            </div>
+            <div class="signup-section__error-container">
+              <small class="signup-section--error"></small>
+            </div>
+          </div>          
+          <div class="signup-section__formfield">
+            <input type="text" placeholder="Email" class="signup-section__input margin-top-16" id="email" autocomplete="off">
+            <div class="signup-section__error-icon">
+              <img src="./images/icon-error.svg" alt="" aria-hidden="true">
+            </div>
+            <div class="signup-section__error-container">
+              <small class="signup-section--error"></small>
+            </div>
+          </div>
+          <div class="signup-section__formfield">
+            <input type="text" placeholder="Password" class="signup-section__input margin-top-16" id="password" autocomplete="off">
+            <div class="signup-section__error-icon">
+              <img src="./images/icon-error.svg" alt="" aria-hidden="true">
+            </div>
+            <div class="signup-section__error-container">
+              <small class="signup-section--error"></small>
+            </div>
+          </div>
+          <button class="signup-section__btn margin-top-16" type="submit">
+            Claim your free trial
+          </button>
+        </form>
+        <footer class="signup-section__footer">
+          <p class="signup-section__footer-text">By clicking the button, you are agreeing to our <a class="signup-section__footer-terms" href="#">Terms and Services</a></p>
+        </footer>
+      </section>
+    </main>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>
