@@ -36,7 +36,7 @@ Mobile Screenshot
 
 ### Links
 
-- Solution URL: [Github](https://github.com/paulhjin/frontendmentor/tree/master/23-news-homepage)
+- Solution URL: [Github](https://github.com/paulhjin/frontendmentor/tree/master/24-news-homepage)
 - Live Site URL: [Netlify](https://pjin-fem-news-homepage.netlify.app)
 
 ## My process
