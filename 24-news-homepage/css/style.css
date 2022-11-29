@@ -223,13 +223,13 @@ hr {
     gap: 3.2rem;
 }
 
-.news-articles article {
+.news-articles div {
     display: grid;
     grid-template-columns: 10rem 1fr;
     gap: 2.4rem;
 }
 
-.news-articles span {
+.news-articles h3 {
     font-size: var(--fs-medium);
     font-weight: var(--fw-bold);
     color: var(--clr-lavender-gray);
