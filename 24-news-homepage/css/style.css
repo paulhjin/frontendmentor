@@ -303,7 +303,8 @@ hr {
         justify-content: space-between;
     }
     
-    .menu-toggle span {
+    .menu-toggle span,
+    .menu-toggle input {
         display: none;
     }
 
